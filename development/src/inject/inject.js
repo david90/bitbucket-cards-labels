@@ -2,6 +2,11 @@
   /* Styles */
 
   var setCustomStyle = function() {
+    var current_milestone_col = $(".column-header:contains('Current Milestone')");
+    if(!current_milestone_col.parent().hasClass("current-miliestone-col")){
+      current_milestone_col.parent().addClass("current-miliestone-col");
+    }
+
     var next_milestone_col = $(".column-header:contains('Next Milestone')");
     if(!next_milestone_col.parent().hasClass("next-miliestone-col")){
       next_milestone_col.parent().addClass("next-miliestone-col");

@@ -37,7 +37,7 @@
 }
 
 .issue-group {
-  padding: 10px;
+  padding: 2px;
   border-radius: 4px;
 }
 
@@ -106,6 +106,14 @@
 
 .column.next-miliestone-col .issue h2:hover {
   background-color: rgba(41, 128, 185, 0.6);
+}
+
+.column.current-miliestone-col .issue h2 {
+  background-color: rgba(211, 84, 0, 0.8);
+}
+
+.column.current-miliestone-col .issue h2:hover {
+  background-color: rgba(211, 84, 0, 0.6);
 }
 
 .column.wip-col .issue h2 {
