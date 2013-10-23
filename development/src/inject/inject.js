@@ -47,6 +47,7 @@
   var extractLabels = function(cardItem) {
     var title = cardItem.find("h2");
     var matched_labels = title.text().match(/\[[\w]+\]/ig);
+    title.html(title.html().replace(/\[[\w]+\]/ig,""));
     var labels = matched_labels.map(function(match) { return match.slice(1, -1); })
 
     placeLabels(cardItem, labels);
