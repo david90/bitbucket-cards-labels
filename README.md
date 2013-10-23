@@ -4,6 +4,10 @@ bitbucket-cards-labels
 Chrome extensions to enhance Bitbucket Cards (http://www.bitbucketcards.com/)
 Beautify layout and you can view labels and calculate hours left for a project!
 
+Screenshot
+======================
+![Bitbucket cards](https://raw.github.com/david90/bitbucket-cards-labels/master/screenshot/screenshot1.png "highlights and label enabled")
+
 Usage
 =======================
 
@@ -11,7 +15,6 @@ Usage
 - In title: `[2hrs]` for a hrs label
 - Default stages: `Backlog`, `Next Milestone`, `WIP`, `QA`, `Resolved`
 - Default piority: `Blocker`, `Critical`, `Major`, `Minor`, `Trivial`
-
 
 Change Log
 =======================
