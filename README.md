@@ -4,7 +4,7 @@ bitbucket-cards-labels
 Chrome extensions to enhance Bitbucket Cards (http://www.bitbucketcards.com/)
 Beautify layout and you can view labels and calculate hours left for a project!
 
-CARD USAGE
+Usage
 =======================
 
 - In title: `[label]` creates a label
@@ -13,7 +13,7 @@ CARD USAGE
 - Default piority: `Blocker`, `Critical`, `Major`, `Minor`, `Trivial`
 
 
-CHANGE LOG
+Change Log
 =======================
 
 - `v.1.0` Add label filter
@@ -25,4 +25,13 @@ https://github.com/david90/bitbucket-cards-labels/raw/master/product/bitbucket_c
 
 Chrome Store
 =======================
-I have no money to put it up yet
+I have no money to put it up yet...
+
+Todo
+=======================
+- Allow real customized  milestones
+- Labels tabs
+- User settings
+- Show comments
+
+Welcome any pull requests and any kind of collaborations. I like a better card board!
