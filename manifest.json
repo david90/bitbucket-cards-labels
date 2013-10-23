@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Oursky Bitbucket Card",
+  "description": "Customize Bitbucket Card with a more beautiful style",
+  "version": "1.0.1",
+
+  "permissions": [
+    "https://www.bitbucketcards.com/",
+    "http://www.bitbucketcards.com/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.bitbucketcards.com/*","http://www.bitbucketcards.com/*"],
+      "css": ["src/inject/inject.css"],
+      "js": ["src/jquery/jquery.min.js", "src/inject/inject.js"],
+      "run_at" : "document_end"
+    }
+ ],
+ "web_accessible_resources": ["src/jquery/jquery-2.0.3.min.map", "bg.jpg"]
+}

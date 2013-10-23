@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  </head>
+  <style>
+  body {
+    background:rgba(60, 169, 230,1.0);
+    min-height: 280px;
+    width: 220px;
+    margin: 0px;
+    transition: all 0.4s;
+  }
+
+  body:hover {
+    background:rgba(50, 159, 220,1.0);
+  }
+
+  .logo, .logo h1 {
+    font-size: 30px;
+    outline: none;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    height: 200px;
+    color: #fff;
+    letter-spacing: -1px;
+    transition: font-size 0.3s;
+    margin: 0px;
+    }
+
+    .logo h1:hover {
+      font-size: 36px;
+    }
+
+    .help, .changelog {
+      font-size: 12px;
+      font-family: 'Lato', sans-serif;
+      min-height:80px;
+      background-color: #fff;
+      color: #aaa;
+      padding: 10px;
+      padding-bottom: 20px;
+    }
+
+    .help ul, .changelog ul {
+      list-style-type: none;
+    }
+
+    .help ul li, .changelog ul li {
+      margin-bottom: 10px;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .help h4, .changelog h4 {
+      font-weight: 600;
+      color: #666;
+    }
+
+    .help i, .changelog i {
+      font-family: "Courier New", Courier, monospace;
+      color: rgb(50, 159, 220);
+    }
+
+    .footer {
+      background-color: #fff;
+      font-size: 12px;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      color: #6cf;
+      padding: 10px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  </style>
+  <body>
+  <a href="http://www.oursky.com" target="_blank" class="logo"><h1>Oursky</h1></a>
+  <div class="help">
+    <h4>CARD USAGE</h4>
+    <ul>
+      <li>In title: <i>[label]</i> creates a label</li>
+      <li>In title: <i>[2hrs]</i> for a hrs label</li>
+      <li>Default stages: <i>Backlog, Next Milestone, WIP, QA, Resolved</i></li>
+      <li>Default piority: <i>Blocker, Critical, Major, Minor, Trivial</i></li>
+    </ul>
+  </div>
+
+  <div class="changelog">
+    <h4>CHANGE LOG<h4>
+    <ul>
+      <li><i>v.1.0</i> Add label filter</li>
+      <li><i>v.1.0.1</i> Add hours left counter</li>
+    </ul>
+      
+  </div>
+  <div class="footer">&copy;2013, A bitbucket cards custom theme</div>
+  </body>
+</html>

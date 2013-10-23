@@ -1,0 +1,215 @@
+#page {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/bg.jpg');
+  background-repeat: repeat;
+}
+
+#content {
+  background-color: transparent;
+  background: linear-gradient(to bottom,  rgba(206,206,206,0.65) 0%,rgba(255,255,255,0.5) 100%);
+  background: rgba(255,255,255,0.4);
+  border-top: solid 1px #ddd
+}
+
+#content #dashboard-items.container {
+  background-color: transparent;
+}
+
+#header .navbar .navbar-inner {
+  background: rgba(100,100,100,0.1);
+}
+
+
+.container #user-menu > a > img {
+  margin: -5px 5px 0 0;
+  float: left;
+  height: 32px;
+  border-radius: 16px;
+}
+
+#project-title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  background-color: #666666;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) 0px 2px 2px;
+}
+
+.issue-group {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.column .issue-group h3 {
+  font-weight: 600;
+}
+
+.issue-group.blocker {
+  border: rgba(192, 57, 43, 1.0) 1px dashed;
+  background: rgba(192, 57, 43, 0.3)
+}
+.issue-group.critical {
+  border: rgba(211, 84, 0, 1.0) 1px dashed;
+  background: rgba(211, 84, 0, 0.3);
+}
+.issue-group.major {
+  border: rgba(161,98,67,0.5) 1px dashed;
+}
+.issue-group.minor {
+  border: rgba(243, 156, 18, 0.5) 1px dashed;
+}
+.issue-group.trivial {
+  border: rgba(39, 174, 96, 0.5) 1px dashed;
+}
+
+.blocker h3 {
+  color: rgb(192, 57, 43);
+}
+.critical h3 {
+  color: rgb(211, 84, 0);
+}
+.major h3 {
+  color: rgb(161,98,67);
+}
+.minor h3 {
+  color: rgb(243, 156, 18);
+}
+.trivial h3 {
+  color: rgb(39, 174, 96);
+}
+
+
+.column {
+  transition: background 0.2s linear;
+}
+
+.column .issue h2 { /* default */
+  background-color: rgba(52, 73, 94, 0.8);
+}
+
+.column .issue h2:hover { /* default */
+  background-color: rgba(52, 73, 94, 0.6);
+}
+
+.column.backlog-col .issue h2 {
+  background-color: rgba(52, 73, 94, 0.8);
+}
+
+.column.backlog-col .issue h2:hover {
+  background-color: rgba(52, 73, 94, 0.6);
+}
+
+.column.next-miliestone-col .issue h2 {
+  background-color: rgba(41, 128, 185, 0.8);
+}
+
+.column.next-miliestone-col .issue h2:hover {
+  background-color: rgba(41, 128, 185, 0.6);
+}
+
+.column.wip-col .issue h2 {
+  background-color: rgba(230, 126, 34, 0.8);
+}
+
+.column.wip-col .issue h2:hover {
+  background-color: rgba(230, 126, 34, 0.6);
+}
+
+.column.qa-col .issue h2 {
+  background-color: rgba(142, 68, 173, 0.8);
+}
+
+.column.qa-col .issue h2:hover {
+  background-color: rgba(142, 68, 173, 0.6);
+}
+
+.column.resolved-col .issue h2 {
+  background-color: rgba(26, 188, 156, 0.8);
+}
+
+.column.resolved-col .issue h2:hover {
+  background-color: rgba(26, 188, 156, 0.6);
+}
+
+.issue h2 a {
+  color: #fff !important;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.issue h2 a:hover{
+  color: #efefef;
+}
+
+
+.column .column-header {
+  font-weight: 200 !important;
+  color: #666 !important;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+  border-bottom: solid 1px #aaa;
+}
+
+.issue .label {
+  display: inline-block;
+  margin: 4px;
+  font-weight: 200;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* For filtering */
+
+#project-title h1 {
+  display: inline-block;
+}
+
+input.search {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 8px;
+  color: #333;
+  box-shadow: 
+    inset 0 2px 0 rgba(0,0,0,.2), 
+    0 0 4px rgba(0,0,0,0.1);
+}
+
+input.search:focus { 
+  outline: none;
+  box-shadow: 
+    inset 0 2px 0 rgba(0,0,0,.2), 
+    0 0 4px rgba(0,0,0,0.1),
+    0 0 5px 1px #51CBEE;
+}
+
+
+.search-count {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 9px;
+  margin-left:  6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height:26px;
+  width: 26px;
+  line-height: 26px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.total-hrs {
+  position: fixed;
+  margin-right: 20px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+footer {
+  margin-bottom: 10px;
+}
