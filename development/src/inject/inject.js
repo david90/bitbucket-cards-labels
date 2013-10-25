@@ -110,7 +110,9 @@
       $(".issue").hide();
 
       var valid_labels = $('.label').filter(function() {
-          return $(this).data('label') && $(this).data('label').toLowerCase() === filter_str.toLowerCase();
+          var to_match_string = filter_str.toLowerCase();
+          var regex = new RegExp( to_match_string, 'g' );
+          return $(this).data('label') && $(this).data('label').toLowerCase().match(regex);
       });
 
       search_count.fadeIn(200);
